@@ -7,6 +7,7 @@ P2P 理财投入收益计算刻度尺
 应用场景：p2p app内理财投资收入预览。
 
 使用实例：
+```Objective-C
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -24,3 +25,4 @@ P2P 理财投入收益计算刻度尺
 - (void)ruleViewDidScroll:(HHRuleView *)ruleView pointValue:(CGFloat)value {
   //滑动刻度尺触发
 }
+```
