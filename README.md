@@ -26,3 +26,6 @@ P2P 理财投入收益计算刻度尺
   //滑动刻度尺触发
 }
 ```
+
+效果图：<br>
+![](https://github.com/a1003072244/HHRuleview/blob/master/Untitled.gif)
