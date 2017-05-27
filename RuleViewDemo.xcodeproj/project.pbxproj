@@ -16,6 +16,9 @@
 		5E8F21D71DD455410075E9B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F21D51DD455410075E9B0 /* LaunchScreen.storyboard */; };
 		5E8F21E21DD455410075E9B0 /* RuleViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8F21E11DD455410075E9B0 /* RuleViewDemoTests.m */; };
 		5E8F21ED1DD455410075E9B0 /* RuleViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8F21EC1DD455410075E9B0 /* RuleViewDemoUITests.m */; };
+		5E8F21FE1DD46B610075E9B0 /* HHRuleViewImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8F21FD1DD46B610075E9B0 /* HHRuleViewImages.xcassets */; };
+		617266F41ED95C76003D4660 /* HHRuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 617266F31ED95C76003D4660 /* HHRuleView.m */; };
+		617266F71ED95D4C003D4660 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 617266F61ED95D4C003D4660 /* UIColor+HexString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		5E8F21E81DD455410075E9B0 /* RuleViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuleViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8F21EC1DD455410075E9B0 /* RuleViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuleViewDemoUITests.m; sourceTree = "<group>"; };
 		5E8F21EE1DD455410075E9B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E8F21FD1DD46B610075E9B0 /* HHRuleViewImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HHRuleViewImages.xcassets; sourceTree = "<group>"; };
+		617266F21ED95C76003D4660 /* HHRuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHRuleView.h; sourceTree = "<group>"; };
+		617266F31ED95C76003D4660 /* HHRuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHRuleView.m; sourceTree = "<group>"; };
+		617266F51ED95D4C003D4660 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		617266F61ED95D4C003D4660 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,11 @@
 				5E8F21C81DD455410075E9B0 /* AppDelegate.m */,
 				5E8F21CA1DD455410075E9B0 /* ViewController.h */,
 				5E8F21CB1DD455410075E9B0 /* ViewController.m */,
+				617266F21ED95C76003D4660 /* HHRuleView.h */,
+				617266F31ED95C76003D4660 /* HHRuleView.m */,
+				5E8F21FD1DD46B610075E9B0 /* HHRuleViewImages.xcassets */,
+				617266F51ED95D4C003D4660 /* UIColor+HexString.h */,
+				617266F61ED95D4C003D4660 /* UIColor+HexString.m */,
 				5E8F21CD1DD455410075E9B0 /* Main.storyboard */,
 				5E8F21D31DD455410075E9B0 /* Assets.xcassets */,
 				5E8F21D51DD455410075E9B0 /* LaunchScreen.storyboard */,
@@ -254,6 +267,7 @@
 			files = (
 				5E8F21D71DD455410075E9B0 /* LaunchScreen.storyboard in Resources */,
 				5E8F21D41DD455410075E9B0 /* Assets.xcassets in Resources */,
+				5E8F21FE1DD46B610075E9B0 /* HHRuleViewImages.xcassets in Resources */,
 				5E8F21CF1DD455410075E9B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,10 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				617266F71ED95D4C003D4660 /* UIColor+HexString.m in Sources */,
 				5E8F21CC1DD455410075E9B0 /* ViewController.m in Sources */,
 				5E8F21D21DD455410075E9B0 /* RuleViewDemo.xcdatamodeld in Sources */,
 				5E8F21C91DD455410075E9B0 /* AppDelegate.m in Sources */,
 				5E8F21C61DD455410075E9B0 /* main.m in Sources */,
+				617266F41ED95C76003D4660 /* HHRuleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,9 +449,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QTM6J95CZZ;
 				INFOPLIST_FILE = RuleViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.zhh.RuleViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.zhh.RuleViewDemo21;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -445,9 +463,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QTM6J95CZZ;
 				INFOPLIST_FILE = RuleViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.zhh.RuleViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.zhh.RuleViewDemo21;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -520,6 +540,7 @@
 				5E8F21F31DD455410075E9B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E8F21F41DD455410075E9B0 /* Build configuration list for PBXNativeTarget "RuleViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +549,7 @@
 				5E8F21F61DD455410075E9B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E8F21F71DD455410075E9B0 /* Build configuration list for PBXNativeTarget "RuleViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +558,7 @@
 				5E8F21F91DD455410075E9B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
