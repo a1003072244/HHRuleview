@@ -28,4 +28,4 @@ P2P 理财投入收益计算刻度尺
 ```
 
 效果图：<br>
-![](https://github.com/a1003072244/HHRuleview/blob/master/Untitled.gif)
+![img](https://github.com/a1003072244/HHRuleview/blob/master/Untitled.gif)
